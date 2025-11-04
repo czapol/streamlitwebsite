@@ -17,7 +17,7 @@ st.subheader("Welcome")
 st.title("From messy metrics to confident calls. 🧠")
 st.write("I help product & data teams align on the real problem, define metrics that matter, and make better bets—without burning out.")
 st.write("[Learn More](https://www.linkedin.com/in/michal-czapski/)")
-lottie_coding='https://lottie.host/embed/0b8870f1-6663-49c1-be8e-679c2a6c09b3/LpeivluRKg.lottie'
+lottie_coding=load_lottieurl("https://lottie.host/20ec146a-5347-42b9-86c5-4b851f2782f3/jz0SzBAbpw.json")
 
 # --- What i doo ---
 with st.container():
@@ -39,3 +39,6 @@ with st.container():
 
 
         )
+
+    with right_column:
+        st_lottie(lottie_coding, height=300, key='coding')
