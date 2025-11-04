@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+from PIL import Image
 from streamlit_lottie import st_lottie
 st.set_page_config(page_title="Michal Czapski Webpage", page_icon="🧠", layout="wide")
 #mojis at https://www.webfx.com/tools/emoji-cheat-sheet/
@@ -17,7 +18,9 @@ st.subheader("Welcome")
 st.title("From messy metrics to confident calls. 🧠")
 st.write("I help product & data teams align on the real problem, define metrics that matter, and make better bets—without burning out.")
 st.write("[Learn More](https://www.linkedin.com/in/michal-czapski/)")
+# Assets
 lottie_coding=load_lottieurl("https://lottie.host/20ec146a-5347-42b9-86c5-4b851f2782f3/jz0SzBAbpw.json")
+img_offer=Image.open("meeting.png")
 
 # --- What i doo ---
 with st.container():
@@ -47,19 +50,17 @@ with st.container():
     with st.container():
         st.write("---")
         st.header("Offering")
-        st.wrtie("##")
+        st.write("##")
         image_column, text_column = st.columns((1,2))
         with image_column:
             #insert image
+            st.image(img_offer)
         with text_column:
             st.subheader("Outcome: shared clarity → crisp decision → owners & next steps.")
             st.write("""
                 - Problem framing + decision workshop
                 - North-star + guardrails draft
-                - Decision memo & 14-day follow-up
+                 - Decision memo & 14-day follow-up
                 - FAQ: How do we start? → Free 20-min intro; I right-size the format.
-                """
-                     
-
-                
+                """         
             )
