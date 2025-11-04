@@ -42,3 +42,24 @@ with st.container():
 
     with right_column:
         st_lottie(lottie_coding, height=300, key='coding')
+    
+    # --- OFFERING -- 
+    with st.container():
+        st.write("---")
+        st.header("Offering")
+        st.wrtie("##")
+        image_column, text_column = st.columns((1,2))
+        with image_column:
+            #insert image
+        with text_column:
+            st.subheader("Outcome: shared clarity → crisp decision → owners & next steps.")
+            st.write("""
+                - Problem framing + decision workshop
+                - North-star + guardrails draft
+                - Decision memo & 14-day follow-up
+                - FAQ: How do we start? → Free 20-min intro; I right-size the format.
+                """
+                     
+
+                
+            )
